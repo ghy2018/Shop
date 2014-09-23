@@ -4,6 +4,8 @@
 基于Bmob移动后端的资讯平台--HBUT版(Android)
 
 GitHub： https://github.com/Stonekity/Shop
+
+
 详情请移步：http://stonekity.github.io/Shop/
 
 
@@ -24,7 +26,7 @@ GitHub： https://github.com/Stonekity/Shop
 
 
 
-项目版本
+版本更新
 --------
 
     v1.5.8   =====   src/1.5.8/Shop
@@ -53,14 +55,11 @@ GitHub： https://github.com/Stonekity/Shop
         2.添加新签名、代码混淆
 
 
-项目计划
+
+
+联系我吧
 --------
-    2014-9-18  将校园服务模块下的具体分类的功能落实，细化
-    
 
-
-Tips
-----
     请 Fork 该项目的人留步，本项目的后台服务采用的是Bmob快速移动后端开发平台，查看项目后台数据需要登录Bmob平台。
     有需要查看数据的小伙伴欢迎随时联系我，我会无私地提供账号和密码。
     
@@ -73,11 +72,6 @@ Tips
     QQ:     596017443
     Phone:  13308647200
         
- 
- 
-        
-其他
-----
     欢迎湖工的IT学子 fork 校园小菜项目.  
          
         
