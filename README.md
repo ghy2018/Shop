@@ -72,6 +72,7 @@ GitHub： https://github.com/Stonekity/Shop
     QQ:     596017443
     Phone:  13308647200
         
-    欢迎湖工的IT学子 fork 校园小菜项目.  
+    欢迎湖工的IT学子 fork 校园小菜项目.
+    
          
         
