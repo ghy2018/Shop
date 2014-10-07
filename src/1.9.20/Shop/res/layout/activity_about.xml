@@ -1,64 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d3d3d3"
-    android:gravity="center" >
+    android:background="#F6F5F3"
+    android:orientation="vertical" >
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" 
-            android:padding="5dp">
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="vertical" >
 
-            <RelativeLayout
-                android:id="@+id/rl_welcome"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:gravity="center"
-                 >
-
-                <ImageView
-                    android:id="@+id/img_welcome"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/shape_radius"
-                    android:contentDescription="欢迎登陆"
-                    android:src="@drawable/ic_app" />
+                android:orientation="vertical" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/img_welcome"
-                    android:layout_centerHorizontal="true"
                     android:gravity="center"
-                    android:text="校园小菜\nVersion 1.0"
-                    android:textSize="12sp"
-                    android:typeface="monospace" />
-            </RelativeLayout>
+                    android:padding="5dp"
+                    android:text="校园小菜［湖工版］"
+                    android:textColor="#1E90FF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Version 1.10.1  Android"
+                    android:textColor="#898989"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      校园小菜官网： "
+                    android:textColor="#696969"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:text="http://xiaocai.bmob.cn"
+                    android:textColor="#1E90FF" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      校园小菜项目： "
+                    android:textColor="#696969"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:text="http://stonekity.github.io/Shop"
+                    android:textColor="#1E90FF" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/rl_welcome"
-                android:gravity="left"
-                android:lineSpacingExtra="5dp"
-                android:lineSpacingMultiplier="1.4"
-                android:text="\n			校园小菜, 是由湖北工业大学计算机学院小小菜团队开发的一款湖工社区移动生活类手机App.
-校园小菜集多功能与一身，可以轻松让你获得校园一手资讯，集教学、娱乐、购物、出行于一身的小菜，相信会是你生活的得力助手。
-\n			小小菜团队一直致力于校园小菜的开发工作，希望能够得到更多校友的支持与建议，我们将不断的更新和完善。同时也乐意和相关的校友合作，欢迎联系小小菜技术团队。
-\n\n联系方式: 
-\n联系人		小小菜团队
-\n电话			13308647200
-\nQQ				596017443
-\n欢迎大家关注校园小菜官方微信		湖工大线下交易"
-                android:textSize="12sp"
-                android:typeface="monospace" />
-        </RelativeLayout>
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="15dp"
+                android:text="       校园小菜，高校大学生专属的贴身小伴侣。现在已经在10余个高校加盟上线，如果你喜欢小菜，那就赶紧向小伙伴推荐校园小菜吧。校园小菜也欢迎在校大学生加盟小菜。\n       校园小菜致力于打造一个对人人都有价值的高校圈，平台提供众多服务如校园咨询、兼职招聘、宾馆KTV、餐馆食堂优惠、宿舍小超市、学习考研分享、租车旅游、景点门票等。经过不断的完善和对学生需求的不断探索，校园小菜也在不断的成长中。"
+                android:textColor="#898989"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:contentDescription="校园小菜下载二维码"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_xiaocai_download" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:contentDescription="微信公共号二维码"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_xiaocai_weixin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="(校园小菜下载二维码)"
+                    android:textColor="#898989"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="(校园小菜微信公共号)"
+                    android:textColor="#898989"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="小小菜 CopyRight ©2014 XiaoYuanXiaoCai. "
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+
+</LinearLayout>
