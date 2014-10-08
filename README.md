@@ -9,15 +9,21 @@ GitHub： https://github.com/Stonekity/Shop
 详情请移步：http://stonekity.github.io/Shop/
 
 
+![github](https://github.com/Stonekity/Shop/blob/master/screen/show_1.png)[    ]
+![github](https://github.com/Stonekity/Shop/blob/master/screen/Show_2.png)[    ]
+![github](https://github.com/Stonekity/Shop/blob/master/screen/show_3.png)
+
+
 
 项目简介
 -------
-
+    
+    
     校园小菜，一个基于Android的移动App, 旨在整合高校的各类资源， 如兼职，宾馆，餐馆， 学习， KTV， 租车，旅游等，
     通过校园小菜建立起一个比较全面的高校生活圈。初步开发的是针对湖工推出的版本。平台后端基于Bmob平台进行开发，应用
     已经发布到小米应用商店，校园小菜的官网(http://xiaocai.bmob.cn)
     
-    
+   
     之所以开发校园小菜项目，处于以下几个目的
     1. 通过校园小菜这个项目来提高自己独立开发项目的能力；
     2. 测试Bmob这个平台的能力；
@@ -27,7 +33,9 @@ GitHub： https://github.com/Stonekity/Shop
 
 版本更新
 --------
-
+    
+    
+    
     v1.5.8   =====   src/1.5.8/Shop
         该版本是根据我自己最初的想法进行开发的，目的是建立一个大的资讯平台，为学生提供第一手校园资讯
     
@@ -59,6 +67,7 @@ GitHub： https://github.com/Stonekity/Shop
 联系我吧
 --------
 
+    
     请 Fork 该项目的人留步，本项目的后台服务采用的是Bmob快速移动后端开发平台，查看项目后台数据需要登录Bmob平台。
     有需要查看数据的小伙伴欢迎随时联系我，我会无私地提供账号和密码。
     
