@@ -10,6 +10,8 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import cn.bmob.v3.update.BmobUpdateAgent;
+
 import com.ad.android.sdk.api.AdSdk;
 import com.stone.shop.R;
 import com.stone.shop.adapter.MineSoftAdapter;
@@ -72,7 +74,7 @@ public class MineSoftActivity extends Activity implements OnItemClickListener{
 			startActivity(toFeedBack);
 			break;
 		case 1:
-			toast("已经是最新版本");
+			BmobUpdateAgent.forceUpdate(this);
 			break;
 		case 2:
 			break;
@@ -91,6 +93,7 @@ public class MineSoftActivity extends Activity implements OnItemClickListener{
 		finish();
 	}
 	
+	@SuppressWarnings("unused")
 	private void toast(String toast) {
 		Toast.makeText(this, toast, Toast.LENGTH_SHORT).show();
 	}
