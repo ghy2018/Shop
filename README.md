@@ -82,5 +82,11 @@ GitHub： https://github.com/Stonekity/Shop
         
     欢迎湖工的IT学子 fork 校园小菜项目.
     
+    
+打赏小菜
+--------
+
+![github](https://github.com/Stonekity/Shop/blob/master/screen/show_3.png)
+    
          
         
