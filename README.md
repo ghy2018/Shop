@@ -86,6 +86,10 @@ GitHub： https://github.com/Stonekity/Shop
 打赏小菜
 --------
 
+感谢以下小伙伴对校园小菜的支持
+
+*
+
 
 ![github](https://github.com/Stonekity/Shop/blob/master/screen/pay.jpg)
     
