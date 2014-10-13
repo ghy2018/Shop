@@ -88,8 +88,9 @@ GitHub： https://github.com/Stonekity/Shop
 
 感谢以下小伙伴对校园小菜的支持
 
-*
-
+江苏  尧悦      ¥1.00
+湖北  刘少杰    ¥0.50
+湖北  汪杨      ¥5.20
 
 ![github](https://github.com/Stonekity/Shop/blob/master/screen/pay.jpg)
     
