@@ -60,6 +60,12 @@ GitHub： https://github.com/Stonekity/Shop
     v1.9.20  ===== src/1.9.20/Shop（新签名）
         1.添加列表下拉刷新
         2.添加新签名、代码混淆
+
+安装包
+-----
+
+    最新版本 XiaoYuanXiaoCai_V3.0_Beta.apk ![立即下载](https://github.com/Stonekity/Shop/blob/master/XiaoYuanXiaoCai_V3.0_Beta.apk)
+
     
          
         
