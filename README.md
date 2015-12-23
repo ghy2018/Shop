@@ -66,7 +66,7 @@ GitHub： https://github.com/Stonekity/Shop
 
     最新版本 XiaoYuanXiaoCai_V3.0_Beta.apk 
     
-    ![github](https://github.com/Stonekity/Shop/blob/master/XiaoYuanXiaoCai_V3.0_Beta.apk)
+    点击立即下载 https://github.com/Stonekity/Shop/blob/master/XiaoYuanXiaoCai_V3.0_Beta.apk
 
     
          
