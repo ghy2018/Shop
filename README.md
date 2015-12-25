@@ -61,6 +61,11 @@ GitHub： https://github.com/Stonekity/Shop
         1.添加列表下拉刷新
         2.添加新签名、代码混淆
 
+    V3.0     ==== /Shop
+        该版本由Android Studio开发，编译打包工具为gradle, 使用ADT进行开发的小伙伴请注意！
+        测试账号：admin/12345
+
+
 安装包
 -----
 
@@ -69,6 +74,9 @@ GitHub： https://github.com/Stonekity/Shop
     
     点击立即下载： https://github.com/Stonekity/Shop/blob/master/XiaoYuanXiaoCai_V3.0_Beta.apk
 
+
+
+QQ: 596017443(欢迎探讨技术)
 
     
          
