@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!--<include layout="@layout/header_order_info"/>-->
+    
+    <!-- <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView -->
+    <ListView
+        android:id="@+id/lv_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:smoothScrollbar="true"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/rl_order_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_order_list_buy"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_bg_btn"
+            android:textColor="@color/text_color_white"
+            android:text="@string/text_order_list_go_buy" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@id/btn_order_list_buy"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_light"
+            android:text="@string/text_order_info_empty_hint" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  店铺评论列表 -->
+    <LinearLayout
+        android:id="@+id/ll_comments_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tv_commit_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:typeface="monospace"
+            android:text="历史评价  (2)"
+            android:textColor="@color/text_color_light"
+            android:textSize="12sp" />
+
+
+        <ListView
+            android:id="@+id/lv_comments_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:dividerHeight="8dp"
+            android:divider="@drawable/divide_15_top_bottom"
+            android:scrollbars="none"
+            android:longClickable="true">
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="3dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/selector_bg_btn"
+        android:text="@string/text_btn_add_commnet"
+        android:typeface="monospace"
+        android:textColor="#FFFFFF" />
+
+</FrameLayout>

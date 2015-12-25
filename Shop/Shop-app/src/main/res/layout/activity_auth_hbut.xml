@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_hbut_stuid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:hint="学号［湖工大］"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/et_hbut_psd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:typeface="monospace" />
+
+
+        <Button
+            android:id="@+id/btn_hbut_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="立即绑定"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:background="@drawable/selector_bg_btn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/divide_15_top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_auth_hbut_tips" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

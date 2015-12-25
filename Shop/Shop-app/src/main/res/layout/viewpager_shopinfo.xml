@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <!-- 店铺展示背景图 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="商店信息背景图"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/ic_banner_5" />
+
+        </FrameLayout>
+
+
+        <!-- 店铺信息 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#F5F5F5"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shop_scrope"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="主营："
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_shop_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="位置：湖工大-西区-二楼"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_shop_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="电话：13308647200"
+                    android:textColor="#808080"
+                    android:textSize="14sp"
+                    android:typeface="monospace"
+                    android:textIsSelectable="false" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_shop_call"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_phone3" />
+
+            <RatingBar
+                android:id="@+id/rb_shop_rate"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_shop_call"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:rating="1.5" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:text="店铺简介"
+            android:background="@drawable/divide_15_top_bottom"
+            android:textColor="@color/text_color_light"
+            android:textSize="12sp" />
+
+
+        <!-- 店铺简介 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#F5F5F5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_shop_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="10dp"
+                android:text="暂无"
+                android:textColor="#696969"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="最新公告"
+            android:background="@drawable/divide_15_top_bottom"
+            android:textColor="@color/text_color_light"
+            android:textSize="12sp" />
+
+        <!-- 促销信息 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_shop_promotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="10dp"
+                android:text="本店最近新推出多种美食，米线A情侣版--￥10，欢迎大家一起来品尝。有免费免单的机会哦"
+                android:textColor="#696969"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stonekity="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <com.stone.shop.base.widget.TitleBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        stonekity:titleText="@string/app_name">
+    </com.stone.shop.base.widget.TitleBarView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <!-- 图片轮播 -->
+
+            <FrameLayout
+                android:id="@+id/fl_image_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:padding="5dp">
+
+                <com.stone.shop.base.widget.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></com.stone.shop.base.widget.AutoScrollViewPager>
+
+                <ImageButton
+                    android:id="@+id/btn_hide_ads"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="3dp"
+                    android:contentDescription="Image Circle"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- 校园 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="校园"
+                        android:textColor="@color/bg_color_first"
+                        android:textSize="16sp"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="湖工升一本啦"
+                        android:textColor="#696969"
+                        android:textSize="14sp"
+                        android:typeface="monospace" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:background="@color/bg_color_second_deep" />
+
+                <com.stone.shop.base.widget.MyGridView
+                    android:id="@+id/gv_campus"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:padding="5dp"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp"></com.stone.shop.base.widget.MyGridView>
+            </LinearLayout>
+
+            <!-- 发现 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="发现"
+                        android:textColor="@color/bg_color_first"
+                        android:textSize="16sp"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="祝湖工全体师生圣诞快乐"
+                        android:textColor="#696969"
+                        android:textSize="14sp"
+                        android:typeface="monospace" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:background="@color/bg_color_first" />
+
+                <com.stone.shop.base.widget.MyGridView
+                    android:id="@+id/gv_finder"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:padding="5dp"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp"></com.stone.shop.base.widget.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

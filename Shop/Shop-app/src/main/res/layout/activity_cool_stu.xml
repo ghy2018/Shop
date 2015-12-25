@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="#F6F5F3"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_cool_stu" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btn_cool_boy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cool_tab_btn_bg_selector"
+            android:enabled="false"
+            android:text="男神"
+            android:textColor="@color/text_color_white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_cool_girl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cool_tab_btn_bg_selector"
+            android:text="女神"
+            android:textColor="@color/bg_color_first"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/cool_load_btn_bg_selector"
+            android:text="点击加载更多"
+            android:textColor="@color/bg_color_first" />
+
+        <ListView
+            android:id="@+id/lv_cool_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_load_more"
+            android:layout_alignParentTop="true"
+            android:clickable="false"
+            android:divider="@null"
+            android:padding="5dp"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

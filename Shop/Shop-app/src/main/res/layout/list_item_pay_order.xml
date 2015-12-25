@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_color_white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:id="@+id/fl_shop_cart_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_cart_good_pic"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/fl_shop_cart_left">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- 商品名称 -->
+
+            <TextView
+                android:id="@+id/tv_cart_good_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:text="你好"/>
+
+            <!-- 商品数量 -->
+            <TextView
+                android:id="@+id/tv_cart_good_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_centerVertical="true"
+                android:text="x1"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_cart_good_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/text_color_normal" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <!-- 店铺名称-->
+                <TextView
+                    android:id="@+id/tv_cart_order_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="店铺名"
+                    android:textColor="@color/bg_color_first"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <!-- 总价 -->
+                <TextView
+                    android:id="@+id/tv_cart_good_total_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/text_color_normal"
+                    android:text="56.00"/>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/btn_shop_cart_del"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_menu_delete_dis" />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

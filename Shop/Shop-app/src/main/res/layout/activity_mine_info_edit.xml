@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.stone.shop.view.TitleBarView-->
+        <!--android:id="@+id/titlebar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--stonekity:titleText="@string/title_activity_mine_info_edit"-->
+        <!--stonekity:rightBtnText="@string/text_btn_save"-->
+        <!--stonekity:leftBtnText="@string/text_btn_cancel"></com.stone.shop.view.TitleBarView>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_icon"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_info_label_icon" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/img_mine_info_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_nickname" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_default"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_sex" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_default"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="text" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/divide_15_top_bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="个人信息"
+                    android:textSize="14dp"
+                    android:textColor="@color/bg_color_first_light" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_stuid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_stu_id" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_stuid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/hint_mine_info_qq"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_school" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/hint_mine_info_default"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_cademy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_cademy" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_cademy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_default"
+                    android:enabled="false"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_class" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_default"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_time" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_default"
+                    android:inputType="text" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/divide_15_top_bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="住址"
+                    android:textSize="14dp"
+                    android:textColor="@color/bg_color_first_light" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_dorpart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_dorpart" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_dorpart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_default"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_dornum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_dornum" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_dornum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_default"
+                    android:inputType="number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/divide_15_top_bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="联系方式"
+                    android:textSize="14dp"
+                    android:textColor="@color/bg_color_first_light" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_phone" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_phont"
+                    android:inputType="phone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_info_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp">
+
+                <TextView
+                    style="@style/text_label_mine_info_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_info_label_qq" />
+
+                <EditText
+                    style="@style/edittext_mine_info_item_tyle"
+                    android:id="@+id/et_mineinfo_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mine_info_qq"
+                    android:inputType="number" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

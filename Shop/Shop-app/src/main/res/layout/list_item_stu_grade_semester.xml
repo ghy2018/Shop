@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_grade_semester_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_red"/>
+
+        <!-- 学期 -->
+        <TextView
+            android:id="@+id/tv_stu_grade_task_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/divide_15_top_bottom"
+            android:minHeight="45dp"
+            android:paddingLeft="8dp"
+            android:typeface="monospace"
+            android:text="20142" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/list_header_stu_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_grade_semester_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_divider" />
+
+</RelativeLayout>

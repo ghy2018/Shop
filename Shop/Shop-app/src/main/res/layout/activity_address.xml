@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/lv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null">
+    </ListView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_address_manager_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_address_m_add"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_bg_btn"
+            android:textColor="@color/text_color_white"
+            android:text="@string/text_address_manager_add" />
+
+        <TextView
+            android:id="@+id/tv_address_manager_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@id/btn_address_m_add"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_light"
+            android:text="@string/text_address_manager_empty_hint" />
+
+    </RelativeLayout>
+
+</LinearLayout>

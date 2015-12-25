@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stone.shop"
+    android:versionCode="12"
+    android:versionName="XiaoYuanXiaoCai_V3.0_Beta">
+
+    <uses-sdkAndr
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- BmobPush SDK权限 -->
+    <permission
+        android:protectionLevel="normal"
+        android:name="cn.bmob.permission.push"></permission>
+    <!-- 添加自定义的权限-->
+    <uses-permission android:name="cn.bmob.permission.push" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <application
+        android:name=".base.application.ShopApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_512"
+        android:label="@string/app_name"
+        android:theme="@style/ActionbarNoIcon">
+        <activity
+            android:name=".main.ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ***************************** Bmob自动更新组件 *************************** -->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <!-- **************************************************************************** -->
+
+        <activity
+            android:name=".main.ui.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/ActionbarSpannerTheme"></activity>
+
+        <activity
+            android:name=".main.ui.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"></activity>
+
+        <activity
+            android:name=".main.ui.activity.ResetPsdActivity"
+            android:label="@string/title_activity_reset_password"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".main.ui.activity.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.ui.activity.LoginActivity"></meta-data>
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".activity.old.OldMainActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".main.ui.activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".main.ui.activity.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.ui.activity.LoginActivity"></meta-data>
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".shop.ui.activity.ShopActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".shop.ui.activity.ShopAllActivity"
+            android:label="@string/title_activity_shop_list"></activity>
+
+        <activity
+            android:name=".hbut.ui.activity.SecondTradeActivity"
+            android:label="@string/campus_2nd_trade"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".hbut.ui.activity.FinderActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hbut.ui.activity.FinderActivity"></meta-data>
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".shop.ui.activity.ShopItemActivity"
+            android:label="@string/title_activity_shop_list"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".shop.ui.activity.ShopAllActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".shop.ui.activity.ShopAllActivity"></meta-data>
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".shop.ui.activity.CommentActivity"
+            android:label="@string/title_activity_comments"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".shop.ui.activity.ShopItemActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".shop.ui.activity.ShopItemActivity"></meta-data>
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".shop.ui.activity.ShopCartActivity"
+            android:label="@string/title_activity_shop_cart"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".shop.ui.activity.PayOrderActivity"
+            android:label="@string/title_activity_pay_order"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".shop.ui.activity.ShopCartActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".shop.ui.activity.ShopCartActivity"></meta-data>
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".shop.ui.activity.OrderActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".shop.ui.activity.OrderInfoActivity"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".activity.old.NewsActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.old.WsqActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.old.WebActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".hbut.ui.activity.FinderActivity"
+            android:label="@string/title_activity_campus_finder"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".shop.ui.activity.PayActivity"
+            android:label="@string/title_activity_pay_coder"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".hbut.ui.activity.CoolStuActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.old.LoverWallActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".hbut.ui.activity.CoolAddActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.old.AwardActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".user.ui.activity.MineActivity"
+            android:label="@string/title_activity_mine"></activity>
+
+        <activity
+            android:name=".user.ui.activity.UserInfoActivity"
+            android:label="@string/title_activity_user_info"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".user.ui.activity.MineInfoActivity"
+            android:label="@string/title_activity_mine_info"
+            android:theme="@style/TranslateActionbar"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".user.ui.activity.MineInfoEditActivity"
+            android:label="@string/title_activity_mine_info_edit"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineInfoActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".user.ui.activity.InputRowActivity"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".user.ui.activity.AddressActivity"
+            android:label="@string/title_activity_address_manager"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineInfoActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineInfoActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".main.ui.activity.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineInfoActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineInfoActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".user.ui.activity.MineSoftActivity"
+            android:label="@string/title_activity_soft_about"
+            android:parentActivityName=".main.ui.activity.MainActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineActivity" />
+        </activity>
+
+        <activity
+            android:name=".user.ui.activity.FeedBackActivity"
+            android:label="@string/title_activity_feed_back"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineSoftActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineSoftActivity" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+            android:name=".activity.old.OldMineActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.old.NewsDetailActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".user.ui.activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".user.ui.activity.MineSoftActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".user.ui.activity.MineSoftActivity"></meta-data>
+        </activity>
+
+        <!-- 教学类 -->
+        <activity
+            android:name=".hbut.ui.activity.BXTActivity"
+            android:label="@string/campus_bxt_news"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".hbut.ui.activity.FinderActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hbut.ui.activity.FinderActivity"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".hbut.ui.activity.BXTNewsActivity"
+            android:label="@string/campus_bxt_news_detail"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".hbut.ui.activity.BXTActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hbut.ui.activity.BXTActivity"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".hbut.ui.activity.StudentGradeActivity"
+            android:label="@string/campus_grade"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".hbut.ui.activity.FinderActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hbut.ui.activity.FinderActivity"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".hbut.ui.activity.AuthHBUTActivity"
+            android:label="@string/campus_auth_hbut"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:parentActivityName=".hbut.ui.activity.FinderActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hbut.ui.activity.FinderActivity" />
+        </activity>
+
+        <service android:name=".hbut.GetSemesterService" />
+
+        <service android:name=".hbut.GetStuGradeService" />
+
+        <service android:name=".hbut.GetStuSchduleService" />
+
+        <service android:name=".main.FixLoginService" />
+
+        <receiver android:name=".receiver.ActivityIntentReceiver">
+            <intent-filter>
+                <action android:name="com.stone.shop.ACTION_TO_SHOP_CART" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Bmob Push -->
+        <service
+            android:label="PushService"
+            android:name="cn.bmob.push.lib.service.PushService"
+            android:process="cn.bmob.push"
+            android:permission="cn.bmob.permission.push"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="cn.bmob.push.PushReceiver">
+            <intent-filter android:priority="2147483647"><!--优先级加最高-->
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听网络连通性 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 第四部中创建的消息接收器，在这里进行注册 -->
+        <receiver android:name=".push.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+        <!-- Bmob Push -->
+
+        <!-- umeng sdk -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="546619d2fd98c56b77006222"></meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="XiaoYuanXiaoCai" />
+        <!-- umeng sdk -->
+
+        <!-- Bmob 支付组件 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <activity
+            android:name="com.bmob.pay.tool.PayActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- Bmob 支付组件 -->
+
+    </application>
+
+</manifest>

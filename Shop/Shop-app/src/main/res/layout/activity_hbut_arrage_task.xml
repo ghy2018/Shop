@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stonekity="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <com.stone.shop.base.widget.TitleBarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        stonekity:titleText="@string/app_name"></com.stone.shop.base.widget.TitleBarView>
+
+
+    <FrameLayout
+        android:id="@+id/ll_stu_grade_hints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/init_advance_text_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:textColor="@color/font_white"
+            android:text="温馨提示：\n因 “小菜查分” 会对查询结果进行本地缓存，以减少对教务系统的数据访问次数，如果您想获得最新的成绩统计数据，请点击右上角的 “同步刷新” 按钮，即可拉取最新的成绩统计数据，感谢您对校园小菜的支持！"/>
+
+        <Button
+            android:id="@+id/btn_hide_hints"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="我知道了"
+            android:textColor="@color/font_white"
+            android:textSize="12sp"
+            android:background="@color/bg_color_first"
+            android:layout_gravity="bottom|center_horizontal"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fg_stu_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"></FrameLayout>
+
+</LinearLayout>

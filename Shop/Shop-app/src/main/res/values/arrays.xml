@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="camera_gallery">
+        <item>相机</item>
+        <item>图片</item>
+    </string-array>
+
+
+    <string-array name="sexs">
+        <item>男</item>
+        <item>女</item>
+        <item>未知</item>
+    </string-array>
+
+    <string-array name="schools">
+        <item>华中科技大学</item>
+        <item>武汉大学</item>
+        <item>华中师范大学</item>
+        <item>武汉理工大学</item>
+        <item>中国地质大学</item>
+        <item>中南民族大学</item>
+        <item>中南财经政法大学</item>
+        <item>武汉科技大学</item>
+        <item>湖北工业大学</item>
+        <item>湖北中医药大学</item>
+        <item>武汉纺织大学</item>
+        <item>武汉工程大学</item>
+        <item>湖北工业大学工程技术学院</item>
+        <item>华中科技大学武昌分校</item>
+    </string-array>
+
+    <string-array name="cademys">
+        <item>轻工学部</item>
+        <item>机械工程学院</item>
+        <item>电气与电子工程学院</item>
+        <item>计算机学院</item>
+        <item>土木工程与建筑学院</item>
+        <item>艺术设计学院</item>
+        <item>工业设计学院</item>
+        <item>经济与管理学院</item>
+        <item>外国语学院</item>
+        <item>理学院</item>
+        <item>马克思主义学院</item>
+        <item>职业技术师范学院</item>
+        <item>国际学院</item>
+        <item>商贸学院</item>
+        <item>继续教育学院</item>
+    </string-array>
+
+    <string-array name="pay_methods">
+        <item>货到付款(RMB)</item>
+        <item>支付宝</item>
+    </string-array>
+</resources>

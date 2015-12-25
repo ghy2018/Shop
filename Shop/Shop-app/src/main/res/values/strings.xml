@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="app_name">校园小菜</string>
+    <string name="app_slogan">不仅仅是小菜</string>
+    <string name="app_version_name">校园小菜｜湖工版</string>
+    <string name="app_school_d">湖北工业大学</string>
+    <string name="app_copyright">© XiaoYuanXiaoCai</string>
+
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_reset_password">找回密码</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_shop_list">小卖铺</string>
+    <string name="title_activity_mine">我</string>
+    <string name="title_activity_shop_cart">购物车</string>
+    <string name="title_activity_pay_order">结算订单</string>
+    <string name="title_activity_campus_finder">校园发现</string>
+    <string name="title_activity_pay_coder">打赏</string>
+    <string name="title_activity_hbut_grade">查成绩</string>
+    <string name="title_activity_mine_info">个人资料</string>
+    <string name="title_activity_mine_info_edit">修改个人资料</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_address_manager">收货地址</string>
+    <string name="title_activity_address_select">选择收货地址</string>
+    <string name="title_activity_order_current">当前订单</string>
+    <string name="title_activity_order_history">历史订单</string>
+    <string name="title_activity_comments">商家评论</string>
+    <string name="title_activity_user_info">用户资料</string>
+    <string name="title_activity_soft_about">软件相关</string>
+    <string name="title_activity_feed_back">意见反馈</string>
+    <string name="title_activity_about">关于我们</string>
+
+
+    <string name="text_login_tips">支持湖工大学号直接登陆，免注册</string>
+    <string name="text_auth_hbut_tips">当前版本为 湖工专版，仅支持绑定 湖北工业大学 教学管理平台的账号，其他学校请下载对应版本。</string>
+
+    <string name="text_btn_back">返回</string>
+    <string name="text_btn_done">确定</string>
+    <string name="text_btn_edit">编辑</string>
+    <string name="text_btn_save">保存</string>
+    <string name="text_btn_star">收藏</string>
+    <string name="text_btn_add">添加</string>
+    <string name="text_btn_sync">同步刷新</string>
+    <string name="text_btn_help">提示</string>
+    <string name="text_btn_submit">提交</string>
+    <string name="text_btn_cancel">取消</string>
+
+
+    <string name="campus_grade">小菜查分</string>
+    <string name="campus_schedule">小菜课表</string>
+    <string name="campus_auth_hbut">教务系统账号绑定</string>
+    <string name="campus_bxt_news">博学堂讲座预告</string>
+    <string name="campus_bxt_news_detail">讲座详情</string>
+    <string name="campus_bxt_news_tips">精彩永不错过，不要和传说中的学霸争</string>
+    <string name="campus_2nd_trade">校园二手街</string>
+    <string name="campus_2nd_trade_tips">淘啊淘，转角遇见你，湖工专属校园二手街</string>
+
+
+    <string name="mine_info_label_icon">头像</string>
+    <string name="mine_info_label_nickname">昵称</string>
+    <string name="mine_info_label_sex">性别</string>
+    <string name="mine_info_label_stu_id">学号</string>
+    <string name="mine_info_label_school">学校</string>
+    <string name="mine_info_label_cademy">学院</string>
+    <string name="mine_info_label_class">班级</string>
+    <string name="mine_info_label_time">入学年份</string>
+    <string name="mine_info_label_dorpart">寝室区域</string>
+    <string name="mine_info_label_dornum">寝室号</string>
+    <string name="mine_info_label_phone">手机</string>
+    <string name="mine_info_label_qq">QQ</string>
+
+
+    <string name="text_table_header_avg_credit">平均学分绩点</string>
+    <string name="text_table_header_total_credit">总学分绩点</string>
+    <string name="text_table_header_task_name">课程名称</string>
+    <string name="text_table_header_grade_credit">学分</string>
+    <string name="text_table_header_grade_point">绩点</string>
+    <string name="text_table_header_grade_grade">成绩</string>
+
+    <string name="hint_mine_info_default">填写</string>
+    <string name="hint_mine_info_phont">重新验证</string>
+    <string name="hint_mine_info_qq">立即绑定</string>
+
+    <string name="text_btn_buy">购买</string>
+    <string name="text_shop_cart_count_hint">您的购物车共有 %d 件商品，请30分钟内下单</string>
+    <string name="text_shop_cart_empty_hint">购物车快饿瘪了！  T.T</string>
+    <string name="text_order_info_empty_hint">是不再 ❤️了么？ T.T</string>
+    <string name="text_shop_cart_pay_order">立即结算</string>
+    <string name="text_shop_cart_go_buy">淘一淘</string>
+    <string name="text_order_list_go_buy">逛一逛</string>
+    <string name="hint_text_no_right_look_user_info">抱歉，无权限查看Ta详细资料</string>
+    <string name="btn_text_pay">付费查看</string>
+
+    <string name="text_address_manager_add">添加新地址</string>
+    <string name="text_address_manager_empty_hint">还未添加收货地址，赶紧添加一个吧！</string>
+
+
+    <string name="text_btn_add_commnet">我来评论</string>
+    <string name="text_btn_submit_comment">发布评论</string>
+    <string name="comments_submit_hint">口味如何</string>
+    <string name="comments_hidden_name">匿名</string>
+    <string name="comments_rating_taste">口味:   </string>
+    <string name="comments_rating_price">价格:   </string>
+    <string name="comments_rating_diliver">配送:   </string>
+    <string name="format_input_text_count">还需输入至少%d个字</string>
+
+    <string name="hint_pay_money">金额</string>
+
+</resources>

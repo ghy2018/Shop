@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="¥"
+            android:textColor="@color/bg_color_first"
+            android:textSize="50sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/et_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:text="5.20"
+            android:hint="@string/hint_pay_money"
+            android:inputType="numberDecimal"
+            android:textColor="@color/bg_color_first"
+            android:textSize="50sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_divider" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="请选择支付方式"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_m_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:id="@+id/img_alipay_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_m_alipay_64" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img_alipay_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="支付宝" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐支付宝用户使用" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_alipay_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_m_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:id="@+id/img_weixin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_m_weixin_64" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img_weixin_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="微信支付" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐微信支付用户使用" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_weixin_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_pay_shop"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_btn"
+            android:textAppearance="?android:textAppearanceListItem"
+            android:textColor="@color/white"
+            android:text="立即打赏" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

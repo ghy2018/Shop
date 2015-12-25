@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_shop_cart_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/divide_15_top_bottom">
+
+        <Button
+            android:id="@+id/btn_shop_cart_pay_order"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_bg_btn"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="@string/text_shop_cart_pay_order"/>
+
+        <TextView
+            android:id="@+id/tv_shop_cart_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_shop_cart_pay_order"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_light"
+            android:textSize="12sp"/>
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_shop_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:dividerHeight="0.5dp"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_cart_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_shop_cart_buy"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_bg_btn"
+            android:textColor="@color/text_color_white"
+            android:text="@string/text_shop_cart_go_buy" />
+
+        <TextView
+            android:id="@+id/tv_shop_cart_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@id/btn_shop_cart_buy"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_light"
+            android:text="@string/text_shop_cart_empty_hint" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
