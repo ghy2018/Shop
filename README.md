@@ -63,7 +63,7 @@ GitHub： https://github.com/Stonekity/Shop
 
     V3.0     ==== /Shop
         该版本由Android Studio开发，编译打包工具为gradle, 使用ADT进行开发的小伙伴请注意！
-        测试账号：admin/12345
+        
 
 
 安装包
