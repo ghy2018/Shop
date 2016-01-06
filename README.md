@@ -1,7 +1,7 @@
 校园小菜
 ========
 
-基于Bmob移动后端的校园资讯平台--HBUT版(Android)
+基于Bmob移动后端的校园生活平台--HBUT版(Android)
 
 GitHub： https://github.com/Stonekity/Shop
 
