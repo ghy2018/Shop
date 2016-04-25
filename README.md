@@ -71,8 +71,6 @@ GitHub： https://github.com/Stonekity/Shop
 
 
 
-QQ: 596017443(欢迎探讨技术)
-
     
          
         
