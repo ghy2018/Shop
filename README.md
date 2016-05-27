@@ -3,8 +3,8 @@
 
 基于Bmob移动后端的校园生活平台--HBUT版(Android)
 
-GitHub： https://github.com/Stonekity/Shop
-
+校园小菜用户版： https://github.com/Stonekity/Shop
+小菜管家商家版： https://github.com/Stonekity/ShopManager
 
 详情请移步：http://stonekity.github.io/Shop
 
