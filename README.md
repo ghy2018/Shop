@@ -42,6 +42,7 @@ v1.9.20  ===== /Shop_ADT/1.9.20/Shop（新签名）
 >6. 添加自动更新组件
 
 V3.0     ==== /Shop_AS/Shop
+
 该版本由Android Studio开发，编译打包工具为gradle, 使用ADT进行开发的小伙伴请注意！
 测试账号：admin/12345
         
