@@ -11,7 +11,7 @@
 
 
 ![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_1.png)[    ]
-![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_Show_2.png)[    ]
+![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_2.png)[    ]
 ![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png)
 
 
@@ -34,36 +34,36 @@
 --------
    
     v1.9.20  ===== /Shop_ADT/1.9.20/Shop（新签名）
-        1. 格子铺分类
-        2. 校内速推新闻
-        3. 博学堂讲座
-        4. 在线提交订单
-        5. 鹰眼广告SDK测试
-        6. 添加自动更新组件
+    >1. 格子铺分类
+    >2. 校内速推新闻
+    >3. 博学堂讲座
+    >4. 在线提交订单
+    >5. 鹰眼广告SDK测试
+    >6. 添加自动更新组件
 
     V3.0     ==== /Shop_AS/Shop
-        该版本由Android Studio开发，编译打包工具为gradle, 使用ADT进行开发的小伙伴请注意！
-        测试账号：admin/12345
+    该版本由Android Studio开发，编译打包工具为gradle, 使用ADT进行开发的小伙伴请注意！
+    测试账号：admin/12345
         
-        1. 全新UI风格
-        2. 完整购物流程实现
-        3. 店铺实现
-        4. 在线支付实现
-        5. 个人中心信息管理
-        6. 湖工大教务系统接入
-        7. 支持讲座预告、查分、二手交易信息发布
+    >1. 全新UI风格
+    >2. 完整购物流程实现
+    >3. 店铺实现
+    >4. 在线支付实现
+    >5. 个人中心信息管理
+    >6. 湖工大教务系统接入
+    >7. 支持讲座预告、查分、二手交易信息发布
 
-    后面计划使用3.0的代码测试Android相关技术，建立多分支开发方式。
+后面计划使用3.0的代码测试Android相关技术，建立多分支开发方式。
 
 
 安装包
 -----
 
-    最新版本： XiaoYuanXiaoCai_V3.0_Beta.apk 
+最新版本： XiaoYuanXiaoCai_V3.0_Beta.apk 
 
-    点击立即下载： https://github.com/Stonekity/Shop/blob/master/XiaoYuanXiaoCai_V3.0_Beta.apk
+点击立即下载： https://github.com/Stonekity/Shop/blob/master/XiaoYuanXiaoCai_V3.0_Beta.apk
 
-    QQ: 596017443(欢迎探讨技术，后台帐号不对外开放，请加好友索要后台帐号的童鞋绕过)
+QQ: 596017443(欢迎探讨技术，后台帐号不对外开放，请加好友索要后台帐号的童鞋绕过)
 
 
     
