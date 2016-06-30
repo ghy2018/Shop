@@ -9,9 +9,9 @@ GitHub： https://github.com/Stonekity/Shop
 详情请移步：http://stonekity.github.io/Shop
 
 
-![github](https://github.com/Stonekity/Shop/blob/master/screen/show_1.png)[    ]
-![github](https://github.com/Stonekity/Shop/blob/master/screen/Show_2.png)[    ]
-![github](https://github.com/Stonekity/Shop/blob/master/screen/show_3.png)
+![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_1.png)[    ]
+![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_Show_2.png)[    ]
+![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png)
 
 
 
@@ -34,36 +34,29 @@ GitHub： https://github.com/Stonekity/Shop
 版本更新
 --------
     
-    
-    
-    v1.5.8   =====   src/1.5.8/Shop
-        该版本是根据我自己最初的想法进行开发的，目的是建立一个大的资讯平台，为学生提供第一手校园资讯
-    
-    v1.6.3   =====   src/1.6.3/Shop
-        该版本是与小小菜团队其他成员项目讨论以后做的调整，目标进一步缩小，从开发平台转到开发订餐
         
-    v1.9.2   =====   src/1.9.2/Shop
-        1.调整应用的结构为可扩展型
-        2.增加在线提交订单
-        
-    v1.9.12  =====  src/1.9.12/Shop
-        1.调整部分UI
-        2.调整格子铺的分类
-        3.增加二手交易
-        4.校内速推新闻添加图片
-        
-    v1.9.17  ===== src/1.9.17/Shop
-        1.添加测试鹰眼广告SDK测试
-        2.添加自动更新组件
-        3.添加博学堂讲座时间提醒
-        
-    v1.9.20  ===== src/1.9.20/Shop（新签名）
-        1.添加列表下拉刷新
-        2.添加新签名、代码混淆
+    v1.9.20  ===== /Shop_ADT/1.9.20/Shop（新签名）
+        1. 格子铺分类
+        2. 校内速推新闻
+        3. 博学堂讲座
+        4. 在线提交订单
+        5. 鹰眼广告SDK测试
+        6. 添加自动更新组件
 
-    V3.0     ==== /Shop
+    V3.0     ==== /Shop_AS/Shop
         该版本由Android Studio开发，编译打包工具为gradle, 使用ADT进行开发的小伙伴请注意！
         测试账号：admin/12345
+        
+        1. 全新UI风格
+        2. 完整购物流程实现
+        3. 店铺实现
+        4. 在线支付实现
+        5. 个人中心信息管理
+        6. 湖工大教务系统接入
+        7. 支持讲座预告、查分、二手交易信息发布
+
+    后面计划使用3.0的代码测试Android相关技术，建立多分支开发方式。
+
 
 
 安装包
@@ -76,7 +69,7 @@ GitHub： https://github.com/Stonekity/Shop
 
 
 
-QQ: 596017443(欢迎探讨技术)
+    QQ: 596017443(欢迎探讨技术，后台帐号不对外开放，请加好友索要后台帐号的童鞋绕过)
 
     
          
