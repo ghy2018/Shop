@@ -9,20 +9,16 @@
 
 详情请移步：http://stonekity.github.io/Shop
 
-![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_1.png)[    ]
-![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_2.png)[    ]
-![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png)
-
 <table>
   <tr>
     <td>
     <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_1.png"/>
     </td>
     <td>
-    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_2.png" width="216"  height="383"/>
+    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_2.png"/>
     </td>
     <td>
-    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png" width="216"  height="383"/>
+    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png"/>
     </td>
   </tr>
 </table>
