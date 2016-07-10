@@ -9,6 +9,9 @@
 
 详情请移步：http://stonekity.github.io/Shop
 
+![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_1.png)[    ]
+![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_2.png)[    ]
+![github](https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png)
 
 <table>
   <tr>
