@@ -16,13 +16,13 @@
 <table>
   <tr>
     <td>
-    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_1.png" width="216"  height="382"/>
+    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_1.png"/>
     </td>
     <td>
-    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_2.png" width="216"  height="382"/>
+    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_2.png" width="216"  height="383"/>
     </td>
     <td>
-    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png" width="216"  height="382"/>
+    <img src="https://github.com/Stonekity/Shop/blob/master/screen/adt_show_3.png" width="216"  height="383"/>
     </td>
   </tr>
 </table>
